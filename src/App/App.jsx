@@ -23,20 +23,21 @@ class App extends React.Component {
         const { alert } = this.props;
         return (
             <div className="container">
-                <div className="">
-                    <div className="col-sm-8 col-sm-offset-2">
+                <div className="row">
                         {alert.message &&
                             <div className={`alert ${alert.type}`}>{alert.message}</div>
                         }
                         <Router history={history}>
                             <Switch>
-                                <PrivateRoute exact path="/" component={HomePage} />
+                                <PrivateRoute exact path="/" component={() => {
+                                    window.location.href = 'http://localhost:3000/';
+                                    return null;
+                                }} />
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
                                 <Redirect from="*" to="/" />
                             </Switch>
                         </Router>
-                    </div>
                 </div>
             </div>
         );
