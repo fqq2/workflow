@@ -30,7 +30,7 @@ class App extends React.Component {
                         <Router history={history}>
                             <Switch>
                                 <PrivateRoute exact path="/" component={() => {
-                                    window.location.href = 'https://https://agile-taiga-65173.herokuapp.com/';
+                                    window.location.href = 'https://agile-taiga-65173.herokuapp.com/';
                                     return null;
                                 }} />
                                 <Route path="/login" component={LoginPage} />
