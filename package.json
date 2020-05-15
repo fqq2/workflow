@@ -1,7 +1,7 @@
 {
   "name": "workflow",
   "version": "1.0.0",
-  "homepage": "https://fqq2.github.io/p2",
+  "homepage": "https://fqq2.github.io/workflow",
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
