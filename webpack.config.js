@@ -5,6 +5,10 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    output: {
+        filename: 'bundle.js',
+        publicPath: '/'
+    },
     module: {
         rules: [
             {
