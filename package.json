@@ -18,7 +18,7 @@
     "diagram-js-minimap": "^1.3.0",
     "gh-pages": "^2.2.0",
     "history": "^4.10.1",
-    "min-dash": "^3.2.0",
+    "min-dash": "^3.8.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
